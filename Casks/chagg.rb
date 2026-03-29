@@ -3,7 +3,7 @@ cask "chagg" do
   name "chagg"
   desc "A modern release-note workflow tool"
   homepage "https://chagg.dev"
-  version "0.14.2"
+  version "0.14.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,12 +12,12 @@ cask "chagg" do
   on_macos do
     on_intel do
       url "https://github.com/codested/chagg/releases/download/#{version}/chagg-darwin-amd64"
-      sha256 "02bc88027e9e63b8ace5b980817a39c9003b551692ed2d496e4e8fa0623c5560"
+      sha256 "d81bd3db332ab26c36bf55f06be922ef70ffc33e868f04e757fa58d3b5aba279"
       binary "chagg-darwin-amd64", target: "chagg"
     end
     on_arm do
       url "https://github.com/codested/chagg/releases/download/#{version}/chagg-darwin-arm64"
-      sha256 "412c5d398725acc7c8826c60053ff124f7bdd6d817f310b4a8e6b8949398b834"
+      sha256 "8fa2ce11bcdbddd9e313db66907b4b4d69a3246426c39f76829c8fe0093699d1"
       binary "chagg-darwin-arm64", target: "chagg"
     end
   end
@@ -25,12 +25,12 @@ cask "chagg" do
   on_linux do
     on_intel do
       url "https://github.com/codested/chagg/releases/download/#{version}/chagg-linux-amd64"
-      sha256 "b325645869c39e21b7d48b0c6944713f02c85b4fac4c58c331d1b8b231fada50"
+      sha256 "4f644fe03960c0ac605dde8aba72818158cc05f491137f4eb6278541c39f5bcc"
       binary "chagg-linux-amd64", target: "chagg"
     end
     on_arm do
       url "https://github.com/codested/chagg/releases/download/#{version}/chagg-linux-arm64"
-      sha256 "9f52fa414c2548c8618939d8a0d1f93ba2e8ccbd997d024b5da8e2ecd511c9d0"
+      sha256 "36679096b0750406124e1c4e0672cef84cb76d17a6d5553c53bb92c22ad2f03b"
       binary "chagg-linux-arm64", target: "chagg"
     end
   end
